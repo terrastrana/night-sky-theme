@@ -61,7 +61,7 @@ background-attachment: fixed;
 background-color: {color:Primary Colour};
 background-image: url({image:Background});
 background-position: {text:horizontal}px {text:vertical}px;
-background-repeat: repeat;
+background-repeat: repeat; 
 font-family: {font:Books};
 }
 
@@ -75,16 +75,14 @@ font-family: {font:Books};
 }
 
 #content {
-    position: relative;
 background-color: {color:Content Background};
 color: {color:Content Font};
 -moz-border-radius: 50px;
 border-radius: 50px;
 width: {text:Content Text Width}px;
-margin:auto;
-margin-top: 60px;
-margin-bottom: 60px;
-padding: 20px 20px;
+margin: 60px 0 60px 460px;
+padding: 20px 0;
+position: absolute;
 }
 
 #content a {
@@ -241,9 +239,9 @@ img {
       border-radius: 50px;
       font-family: 'Lobster', cursive;
       -moz-border-radius: 50px;
-      position: fixed;
-      top: 100px;
-      left: 150px;
+      position: absolute;
+      top: 150px;
+      left: 100px;
       width: 260px;
 }
 
@@ -336,8 +334,9 @@ border-radius: 50px;
 }
 
 #wrap {
-     width:1500px;
-     margin:auto;
+     width: 1500px;
+     margin: auto;
+     position: relative;
 }
 
 </style>
