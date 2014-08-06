@@ -11,4 +11,6 @@ The Background Image setting is optional, and will display as a tiled image if a
 If you are new to customizing Twitter themes, I would recommend that you make a backup of your existing Tumblr theme,
 before attempting to use this one.
 
+Tumblr user themesbyeris has a great tutorial on customizing your blog here: http://themesbyeris.tumblr.com/install.
+
 Enjoy!
