@@ -8,6 +8,8 @@ The image used in the sidebar was originally taken from the following link: http
 
 The Background Image setting is optional, and will display as a tiled image if activated.
 
+The Header Image setting is also optional. It will display as blank until you have uploaded a header image of your choice.
+
 If you are new to customizing Twitter themes, I would recommend that you make a backup of your existing Tumblr theme,
 before attempting to use this one.
 
