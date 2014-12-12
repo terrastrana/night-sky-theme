@@ -3,10 +3,8 @@
 <head>
 
 <title>
-{Title} {block:PostSummary}, {PostSummary}{/block:PostSummary} 
-</title> 
-
-
+{Title} {block:PostSummary}, {PostSummary}{/block:PostSummary}
+</title>
 
 {block:Description}
 <meta name="description" content="{MetaDescription}" />
@@ -18,81 +16,58 @@
 {block:Hidden}
 <meta name="color:Background" content="#000" />
 <meta name="font:Body" content="Courier New" />
-
-
 <meta name="if:Infinite Scroll" content="0">
-
+<meta name="if:Show Header Image" content="0"/>
 <meta name="color:Font Color" content="#fff" />
 <meta name="color:Content Font" content="#000" />
 <meta name="color:Content Background" content="#fff" />
 <meta name="color:Sidebar Background" content="#ddd3ba" />
 <meta name="color:Sidebar Foreground" content="#000000" />
-
 <meta name="color:Primary Colour" content="#a8b1b8" />
 <meta name="color:Secondary Colour" content="#6d98ab" />
-
 <meta name="color:Date 1" content="#000"/>
 <meta name="color:Date 2" content="#000"/>
-
-
 <meta name="font:Blockquote Text" content="Arquitecta"/>
-
 <meta name="font:Sidebar Title" content="Futura"/>
 <meta name="font:Sidebar Text" content="Futura" />
 <meta name="font:Books" content="Alternate Gothic" />
-
-
-<meta name="image:Background" content="" />
-<meta name="image:Sidebar" content="" />
-
+<meta name="image:Background Image" content="" />
+<meta name="image:Header Image" content=" " />
+<meta name="image:Sidebar Image" content="" />
 <meta name="text:Twitter Username" content="http://www.twitter.com/"/>
-
 {/block:Hidden}
-
 
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 <style = text/css>
-
 /* CSS for Celestial Theme */
 
 .about {
-    font-family:{font:About};
+font-family:{font:About};
 }
-
-
-
 
 
 img .about {
-    padding:0;
+padding:0;
 }
 
-
 body {
-
-
 margin: 0;
 word-wrap: break-word;
 background-attachment: fixed;
 background-color: {color:Primary Colour};
-background-image: url({image:Background});
-background-repeat: repeat; 
+background-image: url({image:Background Image});
+background-repeat: repeat;
 font-family: {font:Books};
 }
 
-
-
-
-
-
 .btext {
-    font-family: {font:Blockquote Text};
-    font-size:14px;
+font-family: {font:Blockquote Text};
+font-size:14px;
 }
 
 .bullet {
-    color:#000;
+color:#000;
 }
 
 #content {
@@ -103,471 +78,346 @@ border-radius: 50px;
 width: 560px;
 margin: 60px 0 60px 460px;
 padding: 20px 0;
-
 position: absolute;
 }
 
 #content a {
-      color: {color:Primary Colour};
-      text-decoration: none;
+color: {color:Primary Colour};
+text-decoration: none;
 }
 
 #content a:hover {
-      color: {color:Secondary Colour};
+color: {color:Secondary Colour};
 }
 
 #content blockquote {
-      border-left: solid 2px black;
-      margin: 0;
-      padding-left: 10px;
+border-left: solid 2px black;
+margin: 0;
+padding-left: 10px;
 }
 
 #content #notecontainer {
-      margin: 20px auto;
-      width: 500px;
-      font-size: 11px;
+margin: 20px auto;
+width: 500px;
+font-size: 11px;
 }
 
-
-
-
-
-
-
 #content #notecontainer ol.notes {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 #content #notecontainer img.avatar {
-      margin-right: 10px;
-      width: 16px;
-      height: 16px;
+margin-right: 10px;
+width: 16px;
+height: 16px;
 }
 
 #content #posts {
-      background-color: white;
-      width: 500px;
-      margin: 0 auto 20px;
-      font-size:16px;
+background-color: white;
+width: 500px;
+margin: 0 auto 20px;
+font-size:16px;
 }
 
 #content #posts #permalink {
-      font-size:9px;
-      margin:0;
+font-size:9px;
+margin:0;
 }
-
 
 #content #posts .title {
-      margin-top:5%;
-      font-size: 26px;
+margin-top:5%;
+font-size: 26px;
 }
 
-
-
-  .date {
-                position:         absolute;
-                left:            625px;
-                text-align:       center;
-                width:            120px;
-                white-space:      nowrap;
-                font:             Bold 20px 'Century Gothic', sans-serif;
-                letter-spacing:   -1px;
-                color:            {color:Date 1};
-                background:       #ffffff;
-                padding:          5px 5px 5px 5px;
-                line-height:      20px;
-                text-transform:   uppercase;
-	            margin-bottom: 10px;
- 	            -moz-border-radius: 50px;
-	            border-radius: 50px;
-            }
-
-
-
-            .date em {
-                font-style:       normal;
-                color:            {color:Date 2};
-            }
-
-
-
-            .date big {
-                font-size:        20px;
-            }
-
-
-
-
-/* Footer */
-            #footer {
-                margin:           20px 0px 0px 0px;
-                text-align:       center;
-                font-size:        22px;
-
-
-
-
-
-
-            }
-            
-            #footer a {
-                text-decoration:  none;
-
-                color:            #000000;
-            }
-            
-
-
-
-
-
-
-
-
-
-
-
-            #footer a:hover {
-
-
-
-
-
-
-
-
-
-
-
-                text-decoration:  underline;
-            }
-
-
-            #footer p.tiny {
-                margin:           50px 0px 0px 0px;
-                font-size:        16px;
-            }
-            
-            #footer p.tiny a {
-                text-decoration:  underline;
-                color:            #000000;
-            }
-            
-            #footer p.tiny .dim {
-                filter: alpha(opacity=50); 
-                -moz-opacity: 0.5; 
-                opacity: 0.5;
-            }
-  
-hr.style-six {
-    border:0;
-    height:0;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    margin-top:8%;
-}
-
-
-  
-img {
-      border: 0;
-      max-width: 100%;
-
-
-
-
-
-
-
-
-
-      padding:20px;
-}
-
-
-
-
-
-
-
-#permalink {
-    background: #fff;
-}
-
-
-
-
-
-.permalink {
-    font-size:16px;
-
-}
-
-
-
-
-
-.posts {
-                position:         absolute;
-                left:            565px;
-                text-align:       center;
-                width:            120px;
-                white-space:      nowrap;
-                font:             Bold 20px 'Century Gothic', sans-serif;
-                letter-spacing:   -1px;
-                color:            {color:Date 1};
-                background:       #ffffff;
-                padding:          5px 5px 5px 5px;
-                line-height:      20px;
-                text-transform:   uppercase;
-              margin-bottom: 10px;
-              -moz-border-radius: 50px;
-              border-radius: 50px;
-            }
-
-
-
-
-
-
-
-#sidebar {
-      background-color: #000;
-      border-radius: 50px;
-      font-family: 'Lobster', cursive;
-      -moz-border-radius: 50px;
-      position: absolute;
-      top: 150px;
-      left: 100px;
-      width: 260px;
-}
-
-
-
-#sidebar .description {
-      color: #fff;
-
-
-      font-size: 16px;
-      text-align: center;
-      padding:10px;
-
-      line-height:100%;
-      font-family: {font:Books} ;
-
-
-    
-}
-
-
-
-
-
-#sidebar .description a {
-      color: {color:Primary Colour};
-      text-decoration: none;
-}
-
-
-
-
-
-#sidebar .description a:hover {
-      color: {color:Secondary Colour};
-}
-
-
-
-
-
-#sidebar .image {
-      width: 260px;
-      height: auto;
-      padding:0;
-}
-
-#sidebar .links {
-
-      color: #fff;
-      font-size: 14px;
-      text-align: center;
-      padding: 3px 5px;
-      margin: 2px;
-      font-family: {font:Books};
-}
-
-
-
-#sidebar .title {
-      color:{color:Primary Colour};
-      font-size: 30px;
-      text-align: center;
-      padding:10px;
-}
-
-
-
-
-
-
-
-
-#sidebar .links a, #sidebar .title a {
-     color:{color:Primary Colour};
-     text-decoration:none;
-}
-
-
-
-
-
-#sidebar .links a:hover {
-     color:{color:Secondary Colour};
-     text-decoration:none;
-}
-
-
-
-
-#sidebar .pagination {
-      width: 260px;
-      text-align: center;
-
-      padding: 3px 0;
-}
-
-
-#sidebar .pagination a {
-      color: {color:Primary Colour};
-      text-decoration: none;
-}
-
-
-#sidebar .pagination a:hover {
-      color: {color:Secondary Colour};
-}
-
-
-
-
-#sidebar .title a {
-     color:{color:Primary Colour};
-     text-decoration:none;
-}
-
-
-
-
-#sidebar .title a:hover {
-     color:{color:Secondary Colour};
-     text-decoration:none;
-}
-
-
-
-#tags {
-    background: #fff;
-    width: auto;
-    -moz-border-radius: 50px;
+.date {
+position: absolute;
+left: 625px;
+text-align: center;
+width: 120px;
+white-space: nowrap;
+font: Bold 20px 'Century Gothic', sans-serif;
+letter-spacing: -1px;
+color: {color:Date 1};
+background: #ffffff;
+padding: 5px 5px 5px 5px;
+line-height: 20px;
+text-transform: uppercase;
+margin-bottom: 10px;
+-moz-border-radius: 50px;
 border-radius: 50px;
 }
 
+.date em {
+font-style: normal;
+color: {color:Date 2};
+}
+
+.date big {
+font-size: 20px;
+}
+
+/* Footer */
+#footer {
+margin: 20px 0px 0px 0px;
+text-align: center;
+font-size: 22px;
+}
+
+#footer a {
+text-decoration: none;
+color: #000000;
+}
+
+#footer a:hover {
+text-decoration: underline;
+}
+
+#footer p.tiny {
+margin: 50px 0px 0px 0px;
+font-size: 16px;
+}
+
+#footer p.tiny a {
+text-decoration: underline;
+color: #000000;
+}
+
+#footer p.tiny .dim {
+filter: alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.5;
+}
+
+#header {
+      width: 560px;
+      height: auto;
+      text-align:center;
+      position: relative;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:5%;
+}
+
+hr.style-six {
+border:0;
+height:0;
+border-top: 1px solid rgba(0,0,0,0.1);
+border-bottom: 1px solid rgba(255,255,255,0.3);
+margin-top:8%;
+}
 
 
+img {
+border: 0;
+max-width: 100%;
+padding:20px;
+}
+
+#permalink {
+background: #fff;
+}
+
+.permalink {
+font-size:16px;
+}
+
+.posts {
+position: absolute;
+left: 565px;
+text-align: center;
+width: 120px;
+white-space: nowrap;
+font: Bold 20px 'Century Gothic', sans-serif;
+letter-spacing: -1px;
+color: {color:Date 1};
+background: #ffffff;
+padding: 5px 5px 5px 5px;
+line-height: 20px;
+text-transform: uppercase;
+margin-bottom: 10px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
+
+#sidebar {
+background-color: #000;
+border-radius: 50px;
+font-family: 'Lobster', cursive;
+-moz-border-radius: 50px;
+position: absolute;
+top: 150px;
+left: 100px;
+width: 260px;
+}
+
+#sidebar .description {
+color: #fff;
+font-size: 16px;
+text-align: center;
+padding:10px;
+line-height:100%;
+font-family: {font:Books} ;
+}
+
+#sidebar .description a {
+color: {color:Primary Colour};
+text-decoration: none;
+}
+
+#sidebar .description a:hover {
+color: {color:Secondary Colour};
+}
+
+#sidebar .image {
+width: 260px;
+height: auto;
+padding:0;
+}
+
+#sidebar .links {
+color: #fff;
+font-size: 14px;
+text-align: center;
+padding: 3px 5px;
+margin: 2px;
+font-family: {font:Books};
+}
+
+#sidebar .title {
+color:{color:Primary Colour};
+font-size: 30px;
+text-align: center;
+padding:10px;
+}
+
+#sidebar .links a, #sidebar .title a {
+color:{color:Primary Colour};
+text-decoration:none;
+}
+
+#sidebar .links a:hover {
+color:{color:Secondary Colour};
+text-decoration:none;
+}
+
+#sidebar .pagination {
+width: 260px;
+text-align: center;
+padding: 3px 0;
+}
+
+#sidebar .pagination a {
+color: {color:Primary Colour};
+text-decoration: none;
+}
+
+#sidebar .pagination a:hover {
+color: {color:Secondary Colour};
+}
+
+#sidebar .title a {
+color:{color:Primary Colour};
+text-decoration:none;
+}
+
+#sidebar .title a:hover {
+color:{color:Secondary Colour};
+text-decoration:none;
+}
+
+#tags {
+background: #fff;
+width: auto;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
 
 .text {
-    font-size: 18px;
-    font-family:{font:Sidebar Text};
+font-size: 18px;
+font-family:{font:Sidebar Text};
+
 }
 
 #wrap {
-     width: 1500px;
-     margin: auto;
-     position: relative;
+width: 1500px;
+margin: auto;
+position: relative;
 }
-
-
-
-
 
 /* Custom CSS */
 {CustomCSS}
 
-
-
-
-
 </style>
+
 
 {block:IfInfiniteScroll}
 <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
 {/block:IfInfiniteScroll}
 
+
 </head>
-
-
 <body>
 
 <div id="wrap">
 
+<div id="header">
+
+{block:IfShowHeaderImage}
+<img src="{image:Header Image}"/>
+{/block:IfShowHeaderImage}
+
+{block:IfNotShowHeaderImage}
+
+{/block:IfNotShowHeaderImage}
+
+    
+</div><!-- closes header div -->
+
 <!-- SIDEBAR LIES BEFORE ACTUAL POSTS -->
 <div id="sidebar">
 
+<div class="title">
 
-<div class="title"><a href="/">{Title}</a></div>
+<a href="/">{Title}</a></div>
 
 
-<img class="image" src="{image:Sidebar}" /> 
+<img class="image" src="{image:Sidebar Image}" />
 <div class="description">{Description}</div>
 
+<div class="links">
 
-
-<div class="links"> 
-<a href="/">Home</a>  - 
-<a href="{text:Twitter Username}" target="_blank">Twitter</a>  - 
-<a href="/ask">Ask</a>  -
+<a href="/">Home</a> -
+<a href="{text:Twitter Username}" target="_blank">Twitter</a> -
+<a href="/ask">Ask</a> -
 <a href="/random">Random</a>
+
 </div>
-
-
-
 <div class="pagination">
-
-
 {block:Previous}<a href="{Previous}">« </a>{/block:Previous}
 {block:Next}<a href="{Next}"> »</a>{/block:Next}
 </div>
-
-
-
 </div><!-- Closes sidebar div -->
 
-
 <!-- ACTUAL POSTS START HERE -->
-
 <div id="content">
-
 
 <div class="autopagerize_page_element">
 
 
-    {block:Posts}
-    <div id="posts">
+{block:Posts}
+<div id="posts">
 
-
-  {block:NewDayDate}
-                        <div class="date">
-                            {ShortDayOfWeek}
-                            <em>
-                                {ShortMonth}
-                                <big>{DayOfMonth}</big>
-                            </em>
-                        </div>
-                    {/block:NewDayDate} 
-
+{block:NewDayDate}
+<div class="date">
+{ShortDayOfWeek}
+<em>
+{ShortMonth}
+<big>{DayOfMonth}</big>
+</em>
+</div>
+{/block:NewDayDate}
 {block:Photo}
 {LinkOpenTag}<img src="{PhotoURL-400}" />{LinkCloseTag}
 {block:Caption}<div class="text">{Caption}</div>{/block:Caption}
@@ -589,25 +439,14 @@ border-radius: 50px;
 {AudioPlayer}
 <br />{PlayCountWithLabel}
 {block:Caption}<div class="text"><br />{Caption}</div>{/block:Caption}
-
-
 {/block:Audio}
 
 {block:Quote}
-
 <div class="btext">“{Quote}”</div>
-
 {block:Source}<div class="btext"><br>~ {Source}</div>{/block:Source}
-
-
-
-
-
 {/block:Quote}
 
 {block:Text}
-
-
 {block:Title}<div class="title">{Title}</div>{/block:Title}
 <div class="text">{Body}</div>
 {/block:Text}
@@ -619,25 +458,18 @@ border-radius: 50px;
 {/block:Answer}
 
 {block:Chat}
-
 {block:Title}{Title}<br />{/block:Title}
 <div class="text">
 {block:Lines}
-{block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br  />
+{block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br />
 {/block:Lines}
 </div>
 {/block:Chat}
 
-
 {block:Link}
 <a href="{URL}" >{Name}</a>
 {block:Description}<div class="text"><br />{Description}</div>{/block:Description}
-
 {/block:Link}
-
-
-
-
 
 <div id="permalink"><span class="permalink">
 <a href="{Permalink}">
@@ -648,7 +480,7 @@ border-radius: 50px;
 
 <div id="tags">
 
-    {block:Tags}
+{block:Tags}
 <a href="{TagURL}"><span class="bullet">&#8226;</span> {Tag}</a>
 {/block:Tags}
 
@@ -659,80 +491,58 @@ border-radius: 50px;
 </div><!-- closes postnotes -->
 {/block:PostNotes}
 
-
-
 <hr class="style-six">
-
 {/block:Posts}
-
-
-
-
 
 </div><!-- closes posts -->
 
-
-
 <!-- HERE LIES THE FOOTER -->
-
 <div id="footer">
-        
-
-
-{block:IfNotInfiniteScroll}  
+{block:IfNotInfiniteScroll}
 {block:Pagination}
 
 <div id="pagination">
-      {block:PreviousPage}
-            <a href="{PreviousPage}">&#171; </a> 
-      {/block:PreviousPage}
+
+
+{block:PreviousPage}
+<a href="{PreviousPage}">&#171; </a>
+{/block:PreviousPage}
 
 
 
+{block:JumpPagination length="5"}
+{block:CurrentPage}
+<span class="current_page">{PageNumber}</span>
+{/block:CurrentPage}
+{block:JumpPage}
+<a class="jump_page" href="{URL}">{PageNumber}</a>
+{/block:JumpPage}
+{/block:JumpPagination}
+{block:NextPage}
+<a href="{NextPage}"> &#187;</a>
+{/block:NextPage}
 
 
-
-
-
-      {block:JumpPagination length="5"}
-            {block:CurrentPage}
-
-                  <span class="current_page">{PageNumber}</span>
-            {/block:CurrentPage}
-
-
-
-
-            {block:JumpPage}
-                  <a class="jump_page" href="{URL}">{PageNumber}</a>
-            {/block:JumpPage}
-      {/block:JumpPagination}
-
-      {block:NextPage}
-      
-            <a href="{NextPage}"> &#187;</a>
-      {/block:NextPage}
 </div><!-- closes pagination div -->
+
 {/block:Pagination}
 {/block:IfNotInfiniteScroll}
 
-
-                <p class="tiny">
-                    Browse the <a href="/archive">Archive</a>
-                    &nbsp;<span class="dim">/</span>&nbsp;
-                    Subscribe via <a href="{RSS}">RSS</a>
-                    &nbsp;<span class="dim">/</span>&nbsp;
-                    Powered by <a href="http://tumblr.com/">Tumblr</a>
-					<br />Theme: <a href="http://night-sky-theme.tumblr.com">celestial</a> by terrastrana
-                </p>
-            </div><!-- closes auto_pagerize -->
-        </div><!-- closes content div-->
-
+<p class="tiny">
+Browse the <a href="/archive">Archive</a>
+&nbsp;<span class="dim">/</span>&nbsp;
+Subscribe via <a href="{RSS}">RSS</a>
+&nbsp;<span class="dim">/</span>&nbsp;
+Powered by <a href="http://tumblr.com/">Tumblr</a>
+<br />Theme: <a href="http://night-sky-theme.tumblr.com">celestial</a> by terrastrana
+</p>
+</div><!-- closes footer -->
+</div><!-- closes auto_pagerize -->
 
 
+</div><!-- closes content div-->
+</div><!-- closes wrap div -->
 
 
-
-        </div><!-- closes wrap div -->
-    </body>
+</body>
 </html>
